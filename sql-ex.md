@@ -29,7 +29,7 @@
     <li><b>screen</b> - размер экрана в дюймах.</li></ul>
 
   4) <b>Printer</b> (<b>code</b>, <b>model</b>, <b>color</b>, <b>type</b>, <b>price</b>)  В таблице Printer: 
-  <ul type="square"><b>code</b> - уникальный код,
+  <ul type="square"><li><b>code</b> - уникальный код,</li>
     <li><b>model</b> - модель принтера,</li>
     <li><b>color</b> - для каждой модели принтера указывается, является ли он цветным  ('y', если цветной),</li> 
     <li><b>type</b> - тип принтера (лазерный – 'Laser', струйный – 'Jet' или матричный – 'Matrix'),</li>
@@ -75,7 +75,7 @@
 <br>Найдите все записи таблицы Printer для цветных принтеров.
 
 
-    <br><b>Содержание запроса:</b>
+<br><b>Содержание запроса:</b>
 <br>SELECT * 
 <br>FROM Printer
 <br>WHERE color = 'y'
