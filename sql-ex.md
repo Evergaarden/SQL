@@ -40,11 +40,9 @@
 <br><b>Задание 1:</b>
 <br>Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd
 
-
-        <br><b>Содержание запроса:</b>
-        <br>SELECT model, speed, hd
-        <br>FROM PC
-        <br>WHERE price < 500
+        SELECT model, speed, hd
+        FROM PC
+        WHERE price < 500
 
 
 
@@ -53,10 +51,10 @@
 <br>Найдите производителей принтеров. Вывести: maker
 
 
-<br><b>Содержание запроса:</b>
-<br>SELECT DISTINCT maker
-<br>FROM Product
-<br>WHERE type = 'Printer'
+
+        SELECT DISTINCT maker
+        FROM Product
+        WHERE type = 'Printer'
 
 
 ====================
