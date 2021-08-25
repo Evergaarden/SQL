@@ -7,22 +7,22 @@
 
 <br>The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 
-+----+-------+--------+-----------+
-| Id | Name  | Salary | ManagerId |
-+----+-------+--------+-----------+
-| 1  | Joe   | 70000  | 3         |
-| 2  | Henry | 80000  | 4         |
-| 3  | Sam   | 60000  | NULL      |
-| 4  | Max   | 90000  | NULL      |
-+----+-------+--------+-----------+
+<br>+----+-------+--------+-----------+
+<br>| Id | Name  | Salary | ManagerId |
+<br>+----+-------+--------+-----------+
+<br>| 1  | Joe   | 70000  | 3         |
+<br>| 2  | Henry | 80000  | 4         |
+<br>| 3  | Sam   | 60000  | NULL      |
+<br>| 4  | Max   | 90000  | NULL      |
+<br>+----+-------+--------+-----------+
 
 <br>Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is <br>the only employee who earns more than his manager.
 
-+----------+
-| Employee |
-+----------+
-| Joe      |
-+----------+
+<br>+----------+
+<br>| Employee |
+<br>+----------+
+<br>| Joe      |
+<br>+----------+
 
 
         SELECT e.Name as Employee 
@@ -35,23 +35,23 @@
 
 <br>Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 
-+----+------------------+
-| Id | Email            |
-+----+------------------+
-| 1  | john@example.com |
-| 2  | bob@example.com  |
-| 3  | john@example.com |
-+----+------------------+
+<br>+----+------------------+
+<br>| Id | Email            |
+<br>+----+------------------+
+<br>| 1  | john@example.com |
+<br>| 2  | bob@example.com  |
+<br>| 3  | john@example.com |
+<br>+----+------------------+
 <br>Id is the primary key column for this table.
 
 <br>For example, after running your query, the above Person table should have the following rows:
 
-+----+------------------+
-| Id | Email            |
-+----+------------------+
-| 1  | john@example.com |
-| 2  | bob@example.com  |
-+----+------------------+
+<br>+----+------------------+
+<br>| Id | Email            |
+<br>+----+------------------+
+<br>| 1  | john@example.com |
+<br>| 2  | bob@example.com  |
+<br>+----+------------------+
 
 
         DELETE FROM Person 
@@ -65,24 +65,24 @@
 <br><b>Ex 175. Combine Two Tables</b>
 
 <br>Table: Person
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| PersonId    | int     |
-| FirstName   | varchar |
-| LastName    | varchar |
-+-------------+---------+
+<br>+-------------+---------+
+<br>| Column Name | Type    |
+<br>+-------------+---------+
+<br>| PersonId    | int     |
+<br>| FirstName   | varchar |
+<br>| LastName    | varchar |
+<br>+-------------+---------+
 <br>PersonId is the primary key column for this table.
 
 <br>Table: Address
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| AddressId   | int     |
-| PersonId    | int     |
-| City        | varchar |
-| State       | varchar |
-+-------------+---------+
+<br>+-------------+---------+
+<br>| Column Name | Type    |
+<br>+-------------+---------+
+<br>| AddressId   | int     |
+<br>| PersonId    | int     |
+<br>| City        | varchar |
+<br>| State       | varchar |
+<br>+-------------+---------+
 <br>AddressId is the primary key column for this table.
  
 
